@@ -31,31 +31,46 @@ This class has five classes to be used:
 
 ### setVar
 ```
-GlobalVars.setVar({"foo":"bar","eggs":16}) # Will be setted two vars: "foo" with value "bar" and "eggs" with value 16
-GlobalVars.setVar({"foo":"bar"}) # The "foo" var will be setted with a "bar" value
+# Will be setted two vars: "foo" with value "bar" and "eggs" with value 16
+GlobalVars.setVar({"foo":"bar","eggs":16}) 
+
+# The "foo" var will be setted with a "bar" value
+GlobalVars.setVar({"foo":"bar"}) 
 ```
 
 ### getVar
 ```
-result = GlobalVars.get("foo") # Result var will be the value in "foo"
-result = GlobalVars.get(["foo","bars","eggs"]) # Result var will be a list containing the result of all the three vars
+# Result var will be the value in "foo"
+result = GlobalVars.get("foo") 
+
+# Result var will be a list containing the result of all the three vars
+result = GlobalVars.get(["foo","bars","eggs"]) 
 ```
 
 ### removeVar
 ```
-GlobalVars.removeVar("foo") # Var "foo" will be removed
-GlobalVars.removeVar(["foo","bar","eggs"]) # All the three vars ("foo", "bar" and "eggs") will be removed
+# Var "foo" will be removed
+GlobalVars.removeVar("foo") 
+
+# All the three vars ("foo", "bar" and "eggs") will be removed
+GlobalVars.removeVar(["foo","bar","eggs"]) 
 ```
 
 ### updateVar
 ```
-GlobalVars.updateVar({"foo":"bar"}) # Variable foo will be updated with the new value "bar"
-GlobalVars.updateVar({"foo":"bar","eggs":16}) # The two variables ("foo" and "eggs") will be updated with new values
+# Variable foo will be updated with the new value "bar"
+GlobalVars.updateVar({"foo":"bar"}) 
+
+# The two variables ("foo" and "eggs") will be updated with new values
+GlobalVars.updateVar({"foo":"bar","eggs":16}) 
 ```
 
 ### setOrUpdateVar
 ```
-GlobalVars.setOrUpdater({"foo":"bar"}) # The var "foo" will set if not exist, or will update with a new value if already exist a var with "foo" name
-GlobalVars.setOrUpdateVar({"foo":"bar","eggs":16}) # Two vars will be setted (if not exist) or their values will be updated (if they already exist)
+# The var "foo" will set if not exist, or will update with a new value if already exist a var with "foo" name
+GlobalVars.setOrUpdater({"foo":"bar"}) 
+
+# Two vars will be setted (if not exist) or their values will be updated (if they already exist)
+GlobalVars.setOrUpdateVar({"foo":"bar","eggs":16}) 
 
 ```
