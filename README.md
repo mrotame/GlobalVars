@@ -29,7 +29,7 @@ This class has five classes to be used:
 
 ### Methods Examples
 
-### setVar
+#### setVar = {
 ```
 # Will be setted two vars: "foo" with value "bar" and "eggs" with value 16
 GlobalVars.setVar({"foo":"bar","eggs":16}) 
@@ -37,8 +37,8 @@ GlobalVars.setVar({"foo":"bar","eggs":16})
 # The "foo" var will be setted with a "bar" value
 GlobalVars.setVar({"foo":"bar"}) 
 ```
-
-### getVar
+}
+#### getVar = {
 ```
 # Result var will be the value in "foo"
 result = GlobalVars.get("foo") 
@@ -46,8 +46,8 @@ result = GlobalVars.get("foo")
 # Result var will be a list containing the result of all the three vars
 result = GlobalVars.get(["foo","bars","eggs"]) 
 ```
-
-### removeVar
+}
+#### removeVar = {
 ```
 # Var "foo" will be removed
 GlobalVars.removeVar("foo") 
@@ -55,8 +55,8 @@ GlobalVars.removeVar("foo")
 # All the three vars ("foo", "bar" and "eggs") will be removed
 GlobalVars.removeVar(["foo","bar","eggs"]) 
 ```
-
-### updateVar
+}
+#### updateVar = {
 ```
 # Variable foo will be updated with the new value "bar"
 GlobalVars.updateVar({"foo":"bar"}) 
@@ -64,13 +64,13 @@ GlobalVars.updateVar({"foo":"bar"})
 # The two variables ("foo" and "eggs") will be updated with new values
 GlobalVars.updateVar({"foo":"bar","eggs":16}) 
 ```
-
-### setOrUpdateVar
+}
+#### setOrUpdateVar = {
 ```
 # The var "foo" will set if not exist, or will update with a new value if already exist a var with "foo" name
 GlobalVars.setOrUpdater({"foo":"bar"}) 
 
 # Two vars will be setted (if not exist) or their values will be updated (if they already exist)
 GlobalVars.setOrUpdateVar({"foo":"bar","eggs":16}) 
-
 ```
+}
