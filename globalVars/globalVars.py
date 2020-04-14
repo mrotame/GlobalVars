@@ -1,5 +1,5 @@
 import json, os
-from content import setVar, removeVar, load, save, updateVar, setOrUpdateVar
+from globalVars import setVar, removeVar, load, save, updateVar, setOrUpdateVar
 
 class GlobalVars():
     # Atributos declaradas

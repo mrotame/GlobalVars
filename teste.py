@@ -1,4 +1,6 @@
 from globalVars import GlobalVars
+print(help(GlobalVars))
+
 
 globalVars = GlobalVars()
 globalVars.setVar({"teste":32,"açucar":22})
