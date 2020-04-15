@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='GlobalVars',
-    version='0.0.4',
+    version='0.0.5',
     author='Matheus Menezes Almeida',
     author_email='mrotame@gmail.com',
     description=u'Using environment variable to store global vars to the enrite project',
