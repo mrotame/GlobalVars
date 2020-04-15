@@ -14,6 +14,15 @@ class GlobalVars():
             self.load()
 
 # ---------------- Public Methods ----------------
+    def getAllVars(self):
+        self.load()
+        return self.allVars
+
+    def clearAllVars(self):
+        self.allVars = {}
+        self.save(self.allVars)
+        self.load()
+
     def setVar(self,toSet): # Adiciona uma variavel no dicionario
         self.load()
         self.save(setVar.SetVar(toSet).now())
@@ -46,6 +55,21 @@ class GlobalVars():
         
     def save(self,toSave): # Salva a variavel no sistema 
         save.Save(toSave)
+
+    # ---------------- Dunder Methods ----------------
+    def __len__(self):
+        self.load()
+        return len(self.allVars)
+
+    def __getitem__(self,item):
+        self.load()
+        return self.allVars[item]
+
+    def __setitem__(self,key,item):
+        self.load()
+        self.allVars[key]=item
+        self.save(self.allVars)
+        self.load()
 
 if __name__ == "__main__":
 
