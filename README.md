@@ -68,7 +68,7 @@ GlobalVars.updateVar({"foo":"bar","eggs":16})
 #### setOrUpdateVar()
 ```
 # The var "foo" will set if not exist, or will update with a new value if already exist a var with "foo" name
-GlobalVars.setOrUpdater({"foo":"bar"}) 
+GlobalVars.setOrUpdateVar({"foo":"bar"}) 
 
 # Two vars will be setted (if not exist) or their values will be updated (if they already exist)
 GlobalVars.setOrUpdateVar({"foo":"bar","eggs":16}) 
