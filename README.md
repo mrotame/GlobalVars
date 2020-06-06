@@ -3,7 +3,7 @@
 
 ## Importing
 ``` 
-from globalVars import GlobalVars;
+from globalVars import GlobalVars
 gv = GlobalVars()
 ```
 
