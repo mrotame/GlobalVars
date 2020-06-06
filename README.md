@@ -41,10 +41,10 @@ GlobalVars.setVar({"foo":"bar"})
 #### getVar()
 ```
 # Result var will be the value in "foo"
-result = GlobalVars.get("foo") 
+result = GlobalVars.getVar("foo") 
 
 # Result var will be a list containing the result of all the three vars
-result = GlobalVars.get(["foo","bars","eggs"]) 
+result = GlobalVars.getVar(["foo","bars","eggs"]) 
 ```
 
 #### removeVar()
