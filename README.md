@@ -1,5 +1,5 @@
 # GlobalVars
- A way to implement global vars between classes using the environment variable "os.environ"
+ A Python library to implement global variables to be used between classes using the environment variable "os.environ"
 
 ## Importing
 ``` 
